@@ -1,0 +1,18 @@
+ if (operands.empty())
+          goto Stack_underflow_error;
+        y = operands.top();
+        operands.pop();
+
+        if (operands.empty())
+          goto Stack_underflow_error;
+        x = operands.top();
+        operands.pop();
+         if (operands.empty())
+          goto Stack_underflow_error;
+        y = operands.top();
+        operands.pop();
+
+        if (operands.empty())
+          goto Stack_underflow_error;
+        x = operands.top();
+        operands.pop();
