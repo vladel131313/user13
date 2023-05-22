@@ -1,0 +1,13 @@
+if (operands.empty()) // Стек пуст.
+  {
+Stack_underflow_error:
+    cerr << "stack underflow\n";
+    return 0.;
+  }
+  return operands.top();
+}
+int main()
+{
+  while (true)
+  {
+    double answer = postfix();
